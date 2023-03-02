@@ -1,0 +1,22 @@
+{% if job %}
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{job.title}}</h5>
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>Location</td>
+          <td>{{job.location}}</td>
+        </tr>
+        <tr>
+          <td>Salary</td>
+          <td>{{job.salary}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="#" class="btn btn-primary">More details</a>
+  </div>
+</div>
+{% else %}
+  <div class="alert alert-primary" role="alert">No job found</div>
+{% endif %}
